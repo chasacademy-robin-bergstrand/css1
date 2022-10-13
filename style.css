@@ -1,0 +1,56 @@
+body {
+    background-color: lightblue;
+}
+
+main {
+    padding: 5px;
+    width: 120px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.ljus {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.ljus:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.ljus::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+}
+
+.röd {
+    background-color: red;
+    border: 10px solid darkred;
+}
+.röd::after {
+    left: 0%;
+    right: 0%;
+    background-color: hsl(0, 95%, 76%);
+}
+.gul {
+    background-color: yellow;
+    border: 10px solid goldenrod;
+}
+.gul::after {
+    left: 50%;
+    right: 0;
+    background-color: hsl(59, 96%, 80%);
+}
+.grön {
+    background-color: green;
+    border: 10px solid darkgreen;
+}
+.grön::after {
+    left: 0;
+    right: 50%;
+    background-color: hsl(123, 55%, 59%);
+}
